@@ -1,27 +1,242 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap 5</title>
+  <title>gopoma</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script defer src="./index.js"></script>
 </head>
 <body>
-  <div class="container">
+  <header class="header g-0 d-flex justify-content-center align-items-center">
+    <h1 class="text-white text-center">Back End Developer</h1>
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-logo" href="#">
+        <img src="./images/brand-logo.svg" alt="gopoma" width="45"><span>gopoma</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact me</a>
+          </li>
+        </ul>
+        <form class="d-flex" id="new_subscriber" action="https://unsa1.ipzmarketing.com/f/2KhFCLYWbuc" accept-charset="UTF-8" method="post">
+          <input class="form-control me-2" required="required" aria-required="true" type="email" name="subscriber[email]" id="subscriber_email" placeholder="Email">
+          <input type="text" name="anotheremail" id="anotheremail" style="position: absolute; left: -5000px" tabindex="-1" autocomplete="new-password" />
+          <input class="btn btn-outline-success" type="submit" name="commit" value="Enviar" data-disable-with="Procesando" />
+        </form>
+      </div>
+    </div>
+  </nav>
+  <main class="container mt-4">
+    <h2 class="text-center text-uppercase fst-italic fw-bold" id="skills">My Skills</h2>
     <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-2">
+        <div class="card">
+          <div class="card-banner p-4">
+            <img src="./images/languages/nodejs.svg" class="card-img-top" alt="NodeJS">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">NodeJS</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalles</a>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-2">
+        <div class="card">
+          <div class="card-banner p-4">
+            <img src="./images/languages/javascript.svg" class="card-img-top" alt="NodeJS">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-2">
+        <div class="card">
+          <div class="card-banner p-4">
+            <img src="./images/languages/java.svg" class="card-img-top" alt="NodeJS">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="container mt-4">
+    <h2 class="text-center text-uppercase fst-italic fw-bold" id="about-me">Amongus</h2>
+    <p class="bg-primary text-white p-2 w-25 float-start me-2 d-none d-md-block" style="text-align:justify;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, distinctio aspernatur. Quae ex consequatur nisi ut optio, rem in rerum molestias, neque maxime iste aperiam est blanditiis, odio assumenda corrupti!</p>
+    </p>
+    <p style="text-align:justify;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi obcaecati, quod voluptatum consequatur cupiditate dignissimos magni, ipsa explicabo sit deleniti animi unde esse at maiores qui, repudiandae porro nulla.
+      Quaerat tempore accusamus corrupti culpa! Fugiat corporis beatae, sunt accusantium ratione magnam at voluptate? Corrupti voluptate voluptates quaerat placeat tenetur accusantium aspernatur ipsum fugit molestias modi laudantium, officia enim quis?
+      Repudiandae eum id soluta, quis dolorum molestias consequatur, dolores mollitia, reiciendis illum suscipit amet eos aspernatur ex sint? Laudantium eos aperiam explicabo illum natus mollitia, aliquam incidunt corporis nemo fugit.
+      Magni est saepe ut minus voluptates at odio. Aspernatur reprehenderit consectetur necessitatibus blanditiis. Molestiae ipsam velit doloribus quibusdam ratione quidem saepe, natus est reiciendis dolorem atque illum obcaecati omnis eligendi!
+      Vel tenetur aspernatur quis ut, rerum et minus dicta veniam perferendis recusandae incidunt alias quod suscipit accusamus voluptate aut, corporis voluptatum ullam maiores, asperiores neque consequuntur fugit veritatis! Eaque, nesciunt.
+      Quis unde cupiditate quasi blanditiis, commodi culpa tempora ut asperiores minima accusantium sit rem pariatur expedita quidem soluta voluptatum corporis dolores vel maxime quisquam corrupti optio? Quidem, dicta aperiam! Nemo.
+      Exercitationem architecto fugiat neque commodi autem animi. Vel, corporis atque suscipit minus dignissimos quidem similique aliquid minima nemo impedit modi assumenda eligendi! Dolore deleniti, saepe voluptatem sint minima quam at?
+      Similique suscipit nostrum sapiente, modi ea esse fuga amet minus vitae temporibus necessitatibus est! Placeat ipsa, minus voluptates distinctio fuga deserunt atque beatae. Modi facere dolores culpa, eius voluptatem minus!
+      Deserunt sunt distinctio deleniti soluta. Veritatis ipsam porro eaque in, aspernatur officiis atque vitae animi repellat voluptatem rem quam distinctio quas beatae nulla nostrum mollitia nam quia consequuntur qui maxime!
+      Laboriosam, mollitia et? Voluptatum quia cumque magni ex animi minima optio cum quis voluptatibus molestias accusamus distinctio, temporibus labore? Eius ipsum voluptatem assumenda rerum praesentium, possimus laborum amet magnam beatae?
+      Illum earum rem delectus placeat ducimus, consequatur vitae odio totam mollitia, praesentium voluptatibus commodi inventore nesciunt minima soluta facilis itaque laborum nihil? Fuga, magni? Praesentium facilis at illum dicta veritatis.
+      Ipsum fuga eaque vitae quasi consequuntur facilis commodi voluptatibus, veritatis neque odit sit itaque eum provident delectus adipisci mollitia, eius hic id? Nam soluta dicta inventore suscipit optio exercitationem beatae.
+      Non esse, maxime et, aliquam tempora culpa iure ratione placeat magni quo beatae expedita. Quaerat, alias! Eum eveniet reiciendis in labore asperiores numquam ad. Necessitatibus voluptas et obcaecati officia excepturi?
+      Maiores commodi nemo blanditiis harum sequi? Eaque aperiam tempore dignissimos corporis, ex nihil vero ad placeat doloremque, cum unde id alias commodi eius doloribus esse illo aliquid voluptatum autem praesentium.
+      Soluta reiciendis sint asperiores id quibusdam odit eum dolorum illum accusantium amet corporis sit, architecto repudiandae eveniet officiis quod ut repellat non incidunt nemo. Pariatur minus molestias eos iusto veniam.
+      Ea unde culpa facere magnam ratione eius, nesciunt provident doloremque? Nihil earum quibusdam enim cumque assumenda mollitia deserunt sed maiores similique! Sed officia a atque culpa dolores dolorem libero natus.
+      Earum sint porro et laudantium. Ab obcaecati esse dolores aut libero illum inventore quas hic voluptate mollitia soluta, repudiandae, natus animi ullam pariatur qui. Laborum qui quia adipisci magni eveniet?
+      Eligendi amet distinctio tempora quasi. Aspernatur distinctio id iusto quae. Nobis fuga quia sed beatae voluptatibus molestiae atque, hic iusto provident nostrum? Deserunt, laboriosam fugit porro velit quod tenetur quia.
+      Odio at velit aperiam voluptatum numquam deleniti voluptate neque! Eos, minima cumque labore ut debitis, nihil, molestias dolorum ipsum dolore tempora deleniti nemo in? Quasi placeat neque eaque et dolore!
+      Ad autem provident dolorum, architecto, ducimus est hic, blanditiis amet voluptatem maxime deleniti. Voluptatum vitae consequatur eius nobis porro velit fuga voluptates in accusantium omnis modi, autem error nisi sapiente.
+    </p>
+  </section>
+  <section class="container">
+    <h2 class="text-center text-uppercase fst-italic fw-bold" id="contact-me">Contact me</h2>
+    <form class="needs-validation" novalidate>
+      <div class="row align-items-center">
+        <div class="col-6">
+          <div class="form-group row mb-2">
+            <div class="col-12 col-md-2">
+              <label for="name">Name</label>
+            </div>
+            <div class="col-12 col-md-10">
+              <input class="form-control" type="text" id="name" placeholder="Enter your name" required>
+              <div class="invalid-feedback">
+                Please provide name
+              </div>
+            </div>
+          </div>
+          <div class="form-group row mb-2">
+            <div class="col-12 col-md-2">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-12 col-md-10">
+              <input class="form-control" type="email" id="email" placeholder="Enter your email" required>
+              <div class="invalid-feedback">
+                Invalid Email
+              </div>
+            </div>
+          </div>
+          <div class="form-group row mb-2">
+            <div class="col-12 col-md-2">
+              <label for="services">Services</label>
+            </div>
+            <div class="col-12 col-md-10">
+              <select class="form-select form-select-lg" id="services" multiple required>
+                <option disabled>Assessment</option>
+                <option>BackEnd</option>
+                <option>DevOps</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide project
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <div class="col-12 col-md-2">
+              <label for="payment">Payment</label>
+            </div>
+            <div class="col-12 col-md-10">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkTransferencia">Transferencia</label>
+                <input class="form-check-input" type="checkbox" id="chkTransferencia">
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkPaypal">Paypal</label>
+                <input class="form-check-input" type="checkbox" id="chkPaypal" checked>
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkBitCoin">BitCoin</label>
+                <input  class="form-check-input" type="checkbox" id="chkBitCoin" checked>
+              </div>
+            </div>
+          </div> -->
+          <div class="form-group">
+            <!-- <button class="btn btn-primary">Enviar</button> -->
+            <button class="btn btn-primary">Enviar</button>
+            <!-- <button class="btn btn-secondary">Enviar</button>
+            <button class="btn btn-warning btn-sm disabled">Enviar</button>
+            <button class="btn btn-danger btn-lg" disabled>Enviar</button>
+            <a href="#contact-me" class="btn btn-warning">Enviar</a>
+            <input class="btn btn-outline-success" type="button" value="Enviar"> -->
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group row mb-2">
+            <div class="col-12 col-md-2">
+              <label for="payment">Payment</label>
+            </div>
+            <div class="col-12 col-md-10">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkTransferencia">Transferencia</label>
+                <input class="form-check-input" type="radio" name="payment" id="chkTransferencia" value="chkTransferencia" required>
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkPaypal">Paypal</label>
+                <input class="form-check-input" type="radio" name="payment" id="chkPaypal" value="chkPaypal" required>
+                <div class="invalid-feedback">
+                  Payment is required!
+                </div>
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkBitCoin">BitCoin</label>
+                <input disabled class="form-check-input" type="radio" name="payment" id="chkBitCoin" value="chkBitCoin" required>
+              </div>
+            </div>
+          </div>
+          <img class="img-fluid img-thumbnail rounded" src="./images/teamgroup.jpg" alt="Let's get in contact!">
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer class="container p-4 bg-light text-center">
+    Copyright 2022 <a href="gopoma.net">gopoma.net</a>
+  </footer>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">NodeJS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="./images/languages/nodejs.svg" class="img-fluid" alt="NodeJS">
+          </div>
+          <p style="text-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magni ipsum ab eum distinctio a, debitis quisquam deleniti unde nam ipsam, libero culpa omnis est accusamus consequatur nesciunt quis veritatis.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
